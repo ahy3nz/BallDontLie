@@ -1,0 +1,23 @@
+*.py[cod]
+*.ipynb_checkpoints
+
+# Packages
+*.egg
+*.egg-info
+dist
+build
+eggs
+parts
+bin
+var
+sdist
+develop-eggs
+.installed.cfg
+.pypirc
+
+# PyCharm
+.idea
+.idea/*
+
+#virtual env
+.env/
