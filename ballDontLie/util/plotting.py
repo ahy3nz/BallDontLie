@@ -21,8 +21,8 @@ def overlay_court_mpl(ax=None, color='black', lw=2, outer_lines=False):
     outer_box = Rectangle((-80, -47.5), 160, 190, linewidth=lw, color=color,
                           fill=False)
     # Create the inner box of the paint, width=12ft, height=19ft
-    inner_box = Rectangle((-60, -47.5), 120, 190, linewidth=lw, color=color,
-                          fill=False)
+    #inner_box = Rectangle((-60, -47.5), 120, 190, linewidth=lw, color=color,
+    #                      fill=False)
 
     # Create free throw top arc
     top_free_throw = Arc((0, 142.5), 120, 120, theta1=0, theta2=180,
@@ -52,7 +52,7 @@ def overlay_court_mpl(ax=None, color='black', lw=2, outer_lines=False):
                            linewidth=lw, color=color)
 
     # List of the court elements to be plotted onto the axes
-    court_elements = [hoop, backboard, outer_box, inner_box, top_free_throw,
+    court_elements = [hoop, backboard, outer_box, top_free_throw, #inner_box
                       bottom_free_throw, restricted, corner_three_a,
                       corner_three_b, three_arc, center_outer_arc,
                       center_inner_arc]
